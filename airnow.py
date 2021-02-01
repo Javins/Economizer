@@ -18,11 +18,11 @@ GPIO.setmode(GPIO.BOARD) #sets pin mapping to board locations on Raspberry Pi 3b
 damper = 7
 y1 = 11
 y2 = 13
-fan = 15
+Occ = 15
 GPIO.setup(damper, GPIO.OUT, initial=GPIO.HIGH) #sets pin for damper as output in normal economizermode
 GPIO.setup(y1, GPIO.OUT, initial=GPIO.HIGH) 
 GPIO.setup(y2, GPIO.OUT, initial=GPIO.HIGH) 
-GPIO.setup(fan, GPIO.OUT, initial=GPIO.HIGH) 
+GPIO.setup(Occ, GPIO.OUT, initial=GPIO.HIGH) 
 
 #GPIO.output(damper, GPIO.LOW) #smoke mode operation
 #GPIO.output(damper, GPIO.HIGH) #normal economizer operation
@@ -72,14 +72,14 @@ if __name__ == "__main__":
             GPIO.output(damper, GPIO.LOW) #smoke limiting economizer operation
             GPIO.output(y1, GPIO.LOW) #smoke limiting economizer operation
             GPIO.output(y2, GPIO.LOW) #smoke limiting economizer operation
-            GPIO.output(fan, GPIO.LOW) #smoke limiting economizer operation
+            GPIO.output(Occ, GPIO.LOW) #smoke limiting economizer operation
             state = "smoke limiting economizer operation"
         if pm25 < config["low_act"]:
             state = "normal economizer operation"
             GPIO.output(damper, GPIO.HIGH) #normal economizer operation
             GPIO.output(y1, GPIO.HIGH) #normal economizer operation
             GPIO.output(y2, GPIO.HIGH) #normal economizer operation
-            GPIO.output(fan, GPIO.HIGH) #normal economizer operation
+            GPIO.output(Occ, GPIO.HIGH) #normal economizer operation
         print("pm25: %s" % pm25)
         print("hi_act: %s" %config["hi_act"])
         print("low_act: %s" %config["low_act"])
