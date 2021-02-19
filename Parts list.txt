@@ -1,0 +1,19 @@
+For one Economizer control-
+
+1- KBP307 Bridge Rectifier, $1.20 Ea.
+2- LM2596 DC-DC Buck Converter Power Supply.  1.25V-30V 3A,  $1.50 ea.
+1-  4 Channel DC 5V Relay Module ,$8
+1- Dupont Wire Female to Female Breadboard Jumper Wires, $5-$8 per 100
+1- Micro SD Card 8GB with Raspbian Desktop Plug,  $10.00 ea.
+1- Raspberry Pi 3 B+, $38 ea. 
+
+Add per additional RTU-
+
+1- KBP307 Bridge Rectifier, $1.20 Ea.
+2- LM2596 DC-DC Buck Converter Power Supply.  1.25V-30V 3A,  $1.50 ea.
+1- InduSKY DC 12V 433Mhz 4CH Channel Wireless Relay Receiver Remote Control Switch with Long Range Remote Control Transmitter, $19.00 ea.
+Plus antennas and wiring  if needed
+
+
+
+
